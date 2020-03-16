@@ -45,6 +45,7 @@ Nos pedira un nombre escribimos: **prueba**
 En mi caso, también necesitaba restablecer los archivos de configuración en caché:
 
 ``php artisan key:generate``
+
 ``php artisan config:cache``
 
 **Ejecutamso el servidor**
