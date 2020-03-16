@@ -14,7 +14,7 @@ Editamos los datos de conexión del archivo .env:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=8889
-DB_DATABASE=passport
+DB_DATABASE=api
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
@@ -22,6 +22,10 @@ DB_PASSWORD=root
 **Instalamos passport:**
 
 ``composer require laravel/passport``
+
+**Corremos la migración**
+
+``php artisan migrate``
 
 **Creamos llaves de cifrado**
 
@@ -34,15 +38,20 @@ Nos pedira un nombre escribimos: **prueba**
 
 <p align="center"><img src="./readme/1.png" width="600"></p>
 
-**Corremos la migración**
-
-``php artisan migrate``
-
 **Realizamos las consultas a la api**
 
 [Consultas de api](#consultaapi)
 
 Esta fue la configuración rapida.
+
+``php artisan key:generate``
+``php artisan config:cache``
+
+En mi caso, también necesitaba restablecer los archivos de configuración en caché:
+
+**Ejecutamso el servidor**
+
+``php artisan serve``
 
 
 ## Configuración completa
@@ -55,7 +64,7 @@ Editamos los datos de conexión del archivo .env:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=8889
-DB_DATABASE=passport
+DB_DATABASE=api
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
