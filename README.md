@@ -8,7 +8,7 @@
 
 **Configurar Base de datos**
 
-Editamos los datos de conexión del archivo .env:
+Editamos los datos de conexión del archivo .env (si no esta puedes usar el .env.example solo edita el nombre a .env):
 
 ```env
 DB_CONNECTION=mysql
