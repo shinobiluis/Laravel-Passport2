@@ -23,12 +23,20 @@ DB_PASSWORD=root
 
 ``composer require laravel/passport``
 
+**Creamos llaves de cifrado**
+
+``php artisan passport:install``
+
 **Creamos token personal**
 Nos pedira un nombre escribimos: **prueba**
 
 ``php artisan passport:client --personal``
 
 <p align="center"><img src="./readme/1.png" width="600"></p>
+
+**Corremos la migración**
+
+``php artisan migrate``
 
 **Realizamos las consultas a la api**
 
