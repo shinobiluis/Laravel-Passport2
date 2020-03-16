@@ -42,17 +42,16 @@ Nos pedira un nombre escribimos: **prueba**
 
 [Consultas de api](#consultaapi)
 
-Esta fue la configuración rapida.
+En mi caso, también necesitaba restablecer los archivos de configuración en caché:
 
 ``php artisan key:generate``
 ``php artisan config:cache``
-
-En mi caso, también necesitaba restablecer los archivos de configuración en caché:
 
 **Ejecutamso el servidor**
 
 ``php artisan serve``
 
+Esta fue la configuración rapida.
 
 ## Configuración completa
 
