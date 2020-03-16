@@ -25,10 +25,13 @@ DB_PASSWORD=root
 
 **Creamos token personal**
 Nos pedira un nombre escribimos: **prueba**
+
 ``php artisan passport:client --personal``
+
 <p align="center"><img src="./readme/1.png" width="600"></p>
 
 **Realizamos las consultas a la api**
+
 [Consultas de api](#consultaapi)
 
 Esta fue la configuración rapida.
